@@ -1,0 +1,46 @@
+extends ../includes/g_head
+block variables
+  - var title = 'My Portfolio'
+block content 
+        .wrapper
+            .index-wrapper
+                
+                .wrapper-greeting
+                    .wrapper-greeting__rotate
+                        section.greeting.greeting-index
+                            .greeting__foto
+                                img(src="assets/images/content/ava.jpg", alt="ava")
+                            .greeting__title
+                                h3.greeting__title-name Никитенко Геннадий
+                                .greeting__title-text Личный сайт веб разработчика
+                            ul.social
+                                li.social__link
+                                    a.social__link-vk(href="https://vk.com/minorvankertis" target="_blank")
+                                        svg.social__icon-index.social__icon-vk
+                                            use(xlink:href="assets/images/sprite.svg#vk") 
+                                li.social__link
+                                    a.social__link-git(href="https://github.com/Minor353" target="_blank")
+                                        svg.social__icon-index.social__icon-git
+                                            use(xlink:href="assets/images/sprite.svg#github")
+                                li.social__link 
+                                    a.social__link-in(href="https://www.linkedin.com/in/hennadii-nikitenko-b68494a0/" target="_blank")
+                                        svg.social__icon-index.social__icon-in
+                                            use(xlink:href="assets/images/sprite.svg#in")
+                            ul.btn-page
+                                li.btn-page__item
+                                    a.btn-page__link(href="my-works.html") Мои работы
+                                li.btn-page__item
+                                    a.btn-page__link(href="about.html") Обо мне
+                                li.btn-page__item
+                                    a.btn-page__link(href="blog.html") Блог        
+                img(src="assets/images/content/layer_1.png", alt="bg").index-img.index-img__layer-1
+                img(src="assets/images/content/layer_2.png", alt="bg").index-img.index-img__layer-2
+                img(src="assets/images/content/layer_3.png", alt="bg").index-img.index-img__layer-3
+                img(src="assets/images/content/layer_4.png", alt="bg").index-img.index-img__layer-4
+                img(src="assets/images/content/layer_5.png", alt="bg").index-img.index-img__layer-5
+                .copywriting © Владимир Астахов | создано с любовью в LoftSchool | 2018
+                div#hellopreloader
+                    div#hellopreloader_preload
+                        .hellopreloader-bg
+        script(type="text/javascript") var hellopreloader = document.getElementById("hellopreloader_preload");function fadeOutnojquery(el){el.style.opacity = 1;var interhellopreloader = setInterval(function(){el.style.opacity = el.style.opacity - 0.05;if (el.style.opacity <=0.05){ clearInterval(interhellopreloader);hellopreloader.style.display = "none";}},16);}window.onload = function(){setTimeout(function(){fadeOutnojquery(hellopreloader);},1000);};
+        script(src="assets/scripts/index-min.js")

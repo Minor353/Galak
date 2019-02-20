@@ -1,0 +1,30 @@
+$white: #fff;
+
+$blue: #a3c1c0;
+
+$navi: #038f9e;
+
+$grey: #455a64;
+
+$black: #000;
+
+$dark-grey: #373e42;
+
+
+
+$tablet: 768px;
+
+$phone: 480px;
+
+
+@mixin tablet {
+    @media screen and (max-width:$tablet) {
+        @content;
+    }
+}
+
+@mixin mobile {
+    @media screen and (max-width:$phone) {
+        @content;
+    }
+}
