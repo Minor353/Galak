@@ -1,0 +1,49 @@
+.what-we_wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.what-we_title {
+  margin-top: 160px;
+  margin-bottom: 40px;
+  font-family: 'BebasBold';
+  font-size: 40px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.what-we_text {
+  column-count: 3;
+  column-width: 370px;
+  column-gap: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 14px;
+
+  color: #BDBDBD;
+}
+
+.what-we_partners {
+  padding: 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-we_partners-item {
+  list-style-type: none;
+
+  img {
+    filter: grayscale(0.70);
+    transition: 0.3s;
+    cursor: pointer;
+  }
+}
+
+.what-we_partners-item:hover {
+  img {
+    filter: grayscale(0);
+    transition: 0.3s;
+  }
+}

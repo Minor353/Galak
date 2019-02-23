@@ -4,93 +4,132 @@ html(lang="ru")
         meta(charset="UTF-8")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
-        title СТО Галак
+        title СТО Галлак
+        link(rel='stylesheet', type='text/css', href='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css')
+        link(rel='stylesheet', href='https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css')
+        link(rel='stylesheet', href='assets/styles/jquery.mCustomScrollbar.css')
+        link(rel="stylesheet", href="assets/styles/app.min.css")
     body
         .wrapper
+            .popup-form
+                .popup-form_content
+                    h4.popup-form_content-title записаться на обслуживание
+                    form(action="#", method="post")
+                    input(type="text" placeholder="Ваше имя")
+                    input(type="text" placeholder="Ваш телефон")
+                    textarea(name="#" placeholder="Ваш вопрос")
+                    button(type="submit") отправить заявку
             header.header
                 ul.header_contact-wrap
                     li.header_contact-item
-                        a(href="tel:+380562366166").link-phone
-                            img(src="#", alt="phone")
+                        a(href="tel:+380562366166" target="_blank").link-phone
+                            img(src="assets/images/icons/phone.svg", alt="phone")
                             span (0562) 36-61-66
                     li.header_contact-item
-                        a(href="mailto:nissan@gallak.dp.ua").link-email
-                            img(src="#", alt="mail")
+                        a(href="mailto:nissan@gallak.dp.ua" target="_blank").link-email
+                            img(src="assets/images/icons/mail.svg", alt="mail")
                             span nissan@gallak.dp.ua
                     li.header_contact-item
                         .work-time
-                            img(src="#", alt="time")
+                            img(src="assets/images/icons/clock.svg", alt="time")
                             span График работы:<br>пн-пт: 7:00-22:00
                     li.header_contact-item
-                        a(href="#").link-contact 
+                        a(href="#contact").link-contact 
+                            img(src="assets/images/icons/placeholder.svg", alt="contact")
                             span Адреса
                     li.header_contact-item
-                        a(href="#").link-social
-                            img(src="#", alt="FB")
+                        a(href="https://www.facebook.com/" target="_blank").link-social
+                            img(src="assets/images/icons/social.svg", alt="FB") 
             main.main
                 section.main-section
                     .main-section_wrap
                         .main-section_content
                             h3.main-section_content-title Ваш автомобиль будет как новый!
                             p.main-section_content-text От профессиональной мойки и ремонта повреждений салона до полировки и обработки кузова защитными покрытиями
-                            a(href="#").link-btn-call записаться на обслуживание
-                nav.nav
-                    ul.nav_wrap
-                        li.nav_item
-                            a(href="#").logo
-                                img(src="#", alt="logo")
-                        li.nav_item
-                            a(href="#").nav_item-link Услуги
-                        li.nav_item
-                            a(href="#").nav_item-link О нас
-                        li.nav_item
-                            a(href="#").nav_item-link Отзывы
-                        li.nav_item
-                            a(href="#").nav_item-link Контакты
-                        li.nav_item
-                            a(href="#").link-btn-call записаться на обслуживание
+                            a(href="#").link-btn-call.form-call записаться на обслуживание
+                .nav_position
+                    nav.nav
+                        ul.nav_wrap
+                            li.nav_item
+                                a(href="#").logo
+                                    img(src="assets/images/icons/logo_old.svg", alt="logo")
+                            li.nav_item
+                                a(href="#services").nav_item-link Услуги
+                            li.nav_item
+                                a(href="#about").nav_item-link О нас
+                            li.nav_item
+                                a(href="#reviews").nav_item-link Отзывы
+                            li.nav_item
+                                a(href="#contact").nav_item-link Контакты
+                            li.nav_item
+                                a(href="#").link-btn-call.form-call записаться на обслуживание
                 section.services
+                    .service-popup
+                        .service-popup_wrap
+                            h4.service-popup_title Название услуги
+                            .service-popup_content
+                                .service-popup_content-left
+                                    .service-popup_content-left-img
+                                        img(src="assets/images/content/service-image.png", alt="")
+                                    a(href="#").link-btn-call.form-call записаться на обслуживание 
+                                    a(href="#").service-popup_btn Назад
+                                .service-popup_content-right
+                                    .service-popup_content-right-text
+                                        div Значительная доля импорта автомобилей в Украину приходится на автомобили японских производителей — на них приходится почти 20% от общего объёма импорта (для сравнения Германия и Китай по отдельности поставляют примерно в два раза меньше). Несомненно, тенденция сохранится и в последующие годы: за счёт сочетания непревзойдённого качества, высокой надёжности и приемлемых цен японские автомобили способны побороться за место на украинском автомобильном рынке с корейскими, китайскими, немецкими и американскими моделями.
+                                        p Автосервис «Галлак» специализируется на ремонте и диагностике «японцев» более 15 лет, мы проводим техническое обслуживание «Лексус» и прочих моделей «Тойоты», «Мазда», «Ниссан» и пр., диагностику «Хонда», «Субару», «Мицубиши» и пр., ремонт двигателя, ходовой части и прочих блоков и систем японских автомобилей. Уже более 10 лет автосервис Днепропетровска «Галлак» аттестуется в соответствии со стандартами «Mobil 1», так что качество обслуживания в нашем автосервисе не уступает обслуживанию в сервисах официальных дилеров, при этом услуги предоставляются по низким ценам. На произведённые работы предоставляется гарантия.
+                                        p В спектр предоставляемых услуг по обслуживанию японских автомобилей входит: 
+                                        ul
+                                            li комплексная компьютерная диагностика с использованием дилерского оборудования;
+                                            li проверка и ремонт электрических систем;
+                                            li ремонт двигателя;
+                                            li ремонт ходовой части;
+                                            li ремонт топливной системы;
+                                        p Значительная доля импорта автомобилей в Украину приходится на автомобили японских производителей — на них приходится почти 20% от общего объёма импорта (для сравнения Германия и Китай по отдельности поставляют примерно в два раза меньше). Несомненно, тенденция сохранится и в последующие годы: за счёт сочетания непревзойдённого качества, высокой надёжности и приемлемых цен японские автомобили способны побороться за место на украинском автомобильном рынке с корейскими, китайскими, немецкими и американскими моделями.
+                                        p Автосервис «Галлак» специализируется на ремонте и диагностике «японцев» более 15 лет, мы проводим техническое обслуживание «Лексус» и прочих моделей «Тойоты», «Мазда», «Ниссан» и пр., диагностику «Хонда», «Субару», «Мицубиши» и пр., ремонт двигателя, ходовой части и прочих блоков и систем японских автомобилей. Уже более 10 лет автосервис Днепропетровска «Галлак» аттестуется в соответствии со стандартами «Mobil 1», так что качество обслуживания в нашем автосервисе не уступает обслуживанию в сервисах официальных дилеров, при этом услуги предоставляются по низким ценам. На произведённые работы предоставляется гарантия.
+                                        p В спектр предоставляемых услуг по обслуживанию японских автомобилей входит: 
+                    a(href="#")#services
                     .services_wrap
                         h4.services_title Услуги
                         p.services_subtitle Мастера восстанавливают поверхность вашего автомобиля, – и создают незаметный, но очень эффективный. 
                     ul.services_list
                         li.services_list-item
                             a(href="#").services_item-wrap
-                                img(src="#", alt="services")
+                                img(src="assets/images/content/01.jpg", alt="services")
                                 h5.services_item-title Слесарные работы
                                 p.services_item-description Мастера восстанавливают поверхность, но очень эффективный.
                                 a(href="#").services-btn Подробнее
                         li.services_list-item
                             a(href="#").services_item-wrap
-                                img(src="#", alt="services")
+                                img(src="assets/images/content/02.jpg", alt="services")
                                 h5.services_item-title Кузовные работы
                                 p.services_item-description Мастера восстанавливают поверхность, но очень эффективный.
                                 a(href="#").services-btn Подробнее
                         li.services_list-item
                             a(href="#").services_item-wrap
-                                img(src="#", alt="services")
+                                img(src="assets/images/content/03.jpg", alt="services")
                                 h5.services_item-title Ремонт японских авто
                                 p.services_item-description Мастера восстанавливают поверхность, но очень эффективный.
                                 a(href="#").services-btn Подробнее
                         li.services_list-item
                             a(href="#").services_item-wrap
-                                img(src="#", alt="services")
+                                img(src="assets/images/content/04.jpg", alt="services")
                                 h5.services_item-title Запчасти
                                 p.services_item-description Мастера восстанавливают поверхность, но очень эффективный.
                                 a(href="#").services-btn Подробнее
                         li.services_list-item
                             a(href="#").services_item-wrap
-                                img(src="#", alt="services")
+                                img(src="assets/images/content/01.jpg", alt="services")
                                 h5.services_item-title Слесарные работы
                                 p.services_item-description Мастера восстанавливают поверхность, но очень эффективный.
                                 a(href="#").services-btn Подробнее
                         li.services_list-item
                             a(href="#").services_item-wrap
-                                img(src="#", alt="services")
+                                img(src="assets/images/content/02.jpg", alt="services")
                                 h5.services_item-title Кузовные работы
                                 p.services_item-description Мастера восстанавливают поверхность, но очень эффективный.
                                 a(href="#").services-btn Подробнее
                 section.about
+                    a(href="#")#about
                     .about_wrap
                         .about_prev
                             h3.about_title О нас
@@ -100,70 +139,76 @@ html(lang="ru")
                     .about-gallery
                         ul.about-gallery_wrap
                             li.about-gallery_item
-                                a(href="#")
-                                    img(src="#", alt="gallery")
+                                a(data-fancybox="gallery" href="assets/images/content/gallery1.png")
+                                    img(src="assets/images/content/gallery1.png", alt="gallery")
                             li.about-gallery_item
-                                a(href="#")
-                                    img(src="#", alt="gallery")
+                                a(data-fancybox="gallery" href="assets/images/content/gallery2.png")
+                                    img(src="assets/images/content/gallery2.png", alt="gallery")
                             li.about-gallery_item
-                                a(href="#")
-                                    img(src="#", alt="gallery")
+                                a(data-fancybox="gallery" href="assets/images/content/gallery3.png")
+                                    img(src="assets/images/content/gallery3.png", alt="gallery")
                             li.about-gallery_item
-                                a(href="#")
-                                    img(src="#", alt="gallery")
+                                a(data-fancybox="gallery" href="assets/images/content/gallery4.png")
+                                    img(src="assets/images/content/gallery4.png", alt="gallery")
                             li.about-gallery_item
-                                a(href="#")
-                                    img(src="#", alt="gallery")
+                                a(data-fancybox="gallery" href="assets/images/content/gallery5.png")
+                                    img(src="assets/images/content/gallery5.png", alt="gallery")
                             li.about-gallery_item
-                                a(href="#")
-                                    img(src="#", alt="gallery")
+                                a(data-fancybox="gallery" href="assets/images/content/gallery1.png")
+                                    img(src="assets/images/content/gallery1.png", alt="gallery")
                             li.about-gallery_item
-                                a(href="#")
-                                    img(src="#", alt="gallery")
+                                a(data-fancybox="gallery" href="assets/images/content/gallery2.png")
+                                    img(src="assets/images/content/gallery2.png", alt="gallery")
                             li.about-gallery_item
-                                a(href="#")
-                                    img(src="#", alt="gallery")
+                                a(data-fancybox="gallery" href="assets/images/content/gallery3.png")
+                                    img(src="assets/images/content/gallery3.png", alt="gallery")
                 section.stock
                     .stock_wrap
+                        .stock_img
+                            img(src="assets/images/content/stock.png", alt="stock")
                         .stock_content
                             h3.stock_title Акция
-                            p.stock_text «Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят вас на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4. Наши квалифицированные инженеры проведут полный осмотр и починку транспортного средства с применением сертифицированного диагностического оборудования, дилерских запчастей и расходных материалов.
-                            a(href="#").stock_btn-link Получить скидку
+                            p.stock_text «Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят ваc на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4.
+                            a(href="#").stock_btn-link.form-call Получить скидку
                 section.what-we
                     .what-we_wrap
                         h3.what-we_title Что мы предлагаем
                         p.what-we_text «Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят вас на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4. Наши квалифицированные инженеры проведут полный осмотр и починку транспортного средства с применением сертифицированного диагностического оборудования, дилерских запчастей и расходных материалов. «Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят вас на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4. Наши квалифицированные инженеры проведут полный осмотр и починку транспортного средства с применением сертифицированного диагностического оборудования, дилерских запчастей и расходных материалов. «Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят вас на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4. Наши квалифицированные инженеры проведут полный осмотр и починку транспортного средства с применением сертифицированного диагностического оборудования, дилерских запчастей и расходных материалов.
                         ul.what-we_partners
                             li.what-we_partners-item
-                                img(src="#", alt="partner")
+                                img(src="assets/images/content/Toyota.svg", alt="partner")
                             li.what-we_partners-item
-                                img(src="#", alt="partner")
+                                img(src="assets/images/content/Mazda.svg", alt="partner")
                             li.what-we_partners-item
-                                img(src="#", alt="partner")
+                                img(src="assets/images/content/honda.svg", alt="partner")
                             li.what-we_partners-item
-                                img(src="#", alt="partner")
+                                img(src="assets/images/content/lexus.svg", alt="partner")
                             li.what-we_partners-item
-                                img(src="#", alt="partner")
+                                img(src="assets/images/content/Nissan.svg", alt="partner")
                             li.what-we_partners-item
-                                img(src="#", alt="partner")
+                                img(src="assets/images/content/infiniti.svg", alt="partner")
                 section.why-we
                     .why-we_wrap
                         h3.why-we_title Почему мы
                         ul.why-we_features
                             li.why-we_features-item
-                                img(src="#", alt="feature").why-we_features-img
+                                .why-we_features-img-wrap
+                                    img(src="assets/images/icons/dashboard.svg", alt="feature").why-we_features-img
                                 h5.why-we_features-title CAR INSPECTION
                                 p.why-we_features-text It is a long established fact that a reader will be distracted by the readable content.
                             li.why-we_features-item
-                                img(src="#", alt="feature").why-we_features-img
+                                .why-we_features-img-wrap
+                                    img(src="assets/images/icons/speedometer.svg", alt="feature").why-we_features-img
                                 h5.why-we_features-title CAR INSPECTION
                                 p.why-we_features-text It is a long established fact that a reader will be distracted by the readable content.
                             li.why-we_features-item
-                                img(src="#", alt="feature").why-we_features-img
+                                .why-we_features-img-wrap
+                                    img(src="assets/images/icons/dashboard.svg", alt="feature").why-we_features-img
                                 h5.why-we_features-title CAR INSPECTION
                                 p.why-we_features-text It is a long established fact that a reader will be distracted by the readable content.
                             li.why-we_features-item
-                                img(src="#", alt="feature").why-we_features-img
+                                .why-we_features-img-wrap
+                                    img(src="assets/images/icons/speedometer.svg", alt="feature").why-we_features-img
                                 h5.why-we_features-title CAR INSPECTION
                                 p.why-we_features-text It is a long established fact that a reader will be distracted by the readable content.
                 section.questions
@@ -194,61 +239,74 @@ html(lang="ru")
                                     textarea(name="" placeholder="Ваш вопрос")
                                     button(type="submit").btn-form Отправить вопрос 
                 section.reviews
+                    a(href="#")#reviews
                     .reviews_wrap
                         h3.reviews_title Что о нас говорят
                         ul.reviews_list
                             li.reviews_item
                                 .reviews_item-user
-                                    img(src="#", alt="ava")
+                                    .reviews_item-user-img
+                                        img(src="assets/images/content/ava_1.png", alt="ava")
                                     .reviews_item-user-data
                                         span Джон доу
                                         span Владелец nissan juke
                                 .reviews_item-text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
                             li.reviews_item
                                 .reviews_item-user
-                                    img(src="#", alt="ava")
+                                    .reviews_item-user-img
+                                        img(src="assets/images/content/ava_2.png", alt="ava")
                                     .reviews_item-user-data
                                         span Джон доу
                                         span Владелец nissan juke
                                 .reviews_item-text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
                             li.reviews_item
                                 .reviews_item-user
-                                    img(src="#", alt="ava")
+                                    .reviews_item-user-img
+                                        img(src="assets/images/content/ava_3.png", alt="ava")
                                     .reviews_item-user-data
                                         span Джон доу
                                         span Владелец nissan juke
                                 .reviews_item-text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
                             li.reviews_item
                                 .reviews_item-user
-                                    img(src="#", alt="ava")
+                                    .reviews_item-user-img
+                                        img(src="assets/images/content/ava_1.png", alt="ava")
                                     .reviews_item-user-data
                                         span Джон доу
                                         span Владелец nissan juke
                                 .reviews_item-text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
                             li.reviews_item
                                 .reviews_item-user
-                                    img(src="#", alt="ava")
+                                    .reviews_item-user-img
+                                        img(src="assets/images/content/ava_2.png", alt="ava")
                                     .reviews_item-user-data
                                         span Джон доу
                                         span Владелец nissan juke
                                 .reviews_item-text Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
                 section.contact
-                    .contact_title-wrap
-                        h3.contact_title Контакты
-                        p.contact_description Мастера восстанавливают поверхность вашего автомобиля и создают незаметный, но очень эффективный
-                    .contact_tabs
-                        a(href="#").contact_tabs-btn ул. Купянская, 4
-                        a(href="#").contact_tabs-btn ул. Богдана Хмельницкого 156д
+                    a(href="#")#contact
+                    .contact_title-wrap-bg
+                        .contact_title-wrap
+                            h3.contact_title Контакты
+                            p.contact_description Мастера восстанавливают поверхность вашего автомобиля и создают незаметный, но очень эффективный
+                        .contact_tabs
+                            a(href="#").contact_tabs-btn ул. Купянская, 4
+                            a(href="#").contact_tabs-btn ул. Богдана Хмельницкого 156д
                     .contact_map
                         #map
                     ul.contact_list
                         li.contact_list-item
-                            a(href="mailto:nissan@gallak.dp.ua") nissan@gallak.dp.ua
+                            a(href="mailto:nissan@gallak.dp.ua" target="_blank") nissan@gallak.dp.ua
                         li.contact_list-item
-                            a(href="tel:+380675632003") 067 563 20 03
-                            a(href="tel:+380562366166") 0562 366 166
+                            a(href="tel:+380675632003" target="_blank") 067 563 20 03
+                            a(href="tel:+380562366166" target="_blank") 0562 366 166
                         li.contact_list-item
                             span График
                             span С ПН  ПО ПТ
                             span 07:00 - 22:00
                 footer.footer
+                script(src='https://code.jquery.com/jquery-3.3.1.js', integrity='sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=', crossorigin='anonymous')
+                script(type='text/javascript', src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js')
+                script(src='https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js')
+                script(src="assets/scripts/jquery.mCustomScrollbar.concat.min.js")
+                script(src="assets/scripts/index-min.js")

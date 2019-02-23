@@ -1,0 +1,66 @@
+.stock {
+  background-color: #fff;
+  padding: 20px 0;
+  background-image: url('../images/content/bg_sale.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 50%;
+}
+
+.stock_wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stock_img {
+  width: 685px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.stock_content {
+  width: 585px;
+}
+
+.stock_title {
+  font-family: 'BebasBold';
+  font-size: 36px;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  color: #262222;
+}
+
+.stock_text {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 16px;
+
+  color: #4F4F4F;
+}
+
+.stock_btn-link {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 14px 35px;
+  color: #FFFFFF;
+  background: #E34132;
+  text-decoration: none;
+  display: block;
+  width: max-content;
+  margin-top: 70px;
+  transition: 0.3s;
+}
+
+.stock_btn-link:hover {
+  background: #262222;
+  transition: 0.3s;
+}

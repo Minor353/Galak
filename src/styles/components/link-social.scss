@@ -1,0 +1,19 @@
+.link-social {
+  width: 40px;
+  height: 40px;
+
+  img {
+    height: 60%;
+    width: 60%;
+    object-fit: contain;
+  }
+}
+
+.link-social:hover {
+  cursor: pointer;
+
+  img {
+    opacity: 1;
+    transition: 0.3s;
+  }
+}

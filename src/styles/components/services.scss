@@ -1,0 +1,96 @@
+.services {
+  margin-bottom: 140px;
+
+}
+
+.services_wrap {
+  text-align: center;
+  padding-bottom: 70px;
+  background-image: url('../images/content/bg_svg_services.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.services_title {
+  font-family: 'BebasBold';
+  font-size: 40px;
+  text-align: center;
+
+  color: #E8E8E8;
+  margin-bottom: 20px;
+}
+
+.services_subtitle {
+  max-width: 347px;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 12px;
+  text-align: center;
+
+  color: #646673;
+}
+
+.services_list {
+  padding: 0;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+#mCSB_1_container {
+  display: flex;
+}
+
+.mCS-dark-3.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+  background: #E34132 !important;
+}
+
+.services_list-item {
+  list-style-type: none;
+  max-width: 275px;
+  margin-right: 30px;
+  margin-bottom: 80px;
+}
+
+.services_item-wrap {
+  text-decoration: none;
+
+  img {
+    width: 278px;
+    height: 326px;
+    object-fit: cover;
+    filter: grayscale(1);
+    transition: 0.3s;
+  }
+}
+
+.services_list-item:hover img {
+  filter: grayscale(0);
+  transition: 0.3s;
+}
+
+.services_item-title {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 24px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+.services_item-description {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #BDBDBD;
+}

@@ -1,0 +1,35 @@
+.main-section {
+  height: 100vh;
+  padding-top: 80px;
+  background-image: url('../images/content/background_ds.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-section_wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.main-section_content {
+  max-width: 615px;
+  margin-top: 120px;
+}
+
+.main-section_content-title {
+  font-family: 'BebasBold';
+  font-size: 46px;
+  margin-bottom: 20px;
+  color: #E34132;
+}
+
+.main-section_content-text {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  color: #BDBDBD;
+  font-size: 20px;
+  margin-bottom: 70px;
+}

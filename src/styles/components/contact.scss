@@ -1,0 +1,179 @@
+.contact_title-wrap {
+
+  margin: 0 auto;
+  text-align: center;
+
+}
+
+.contact_title-wrap-bg {
+  padding-top: 160px;
+  padding-bottom: 40px;
+  background-image: url('../images/content/bg_svg_map.svg');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact_title {
+  font-family: 'BebasBold';
+  line-height: normal;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.contact_description {
+  max-width: 368px;
+  margin: 0 auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: normal;
+  line-height: normal;
+  font-size: 12px;
+  text-align: center;
+  margin-bottom: 70px;
+  color: #646673;
+}
+
+.contact_tabs {
+  display: flex;
+  justify-content: center;
+}
+
+.contact_map {
+  height: 580px;
+  background-image: url('../images/content/map.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contact_list {
+  padding: 0;
+  margin: 0;
+  height: 200px;
+  margin-top: -200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.contact_list-item {
+  list-style-type: none;
+  min-width: 300px;
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #F2F2F2;
+  border: 1px solid #1A1313;
+  box-sizing: border-box;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 45%;
+
+  a {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 20px;
+
+    color: #262222;
+    transition: 0.3s;
+  }
+
+
+
+  span {
+    text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #262222;
+    transition: 0.3s;
+  }
+
+  span:first-child {
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.contact_list-item:nth-child(1) {
+  background-image: url('../images/icons/mail_f.svg');
+}
+
+.contact_list-item:nth-child(2) {
+  background-image: url('../images/icons/phone_f.svg');
+
+  a:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+.contact_list-item:nth-child(3) {
+  background-image: url('../images/icons/clock_f.svg');
+}
+
+.contact_tabs-btn {
+  max-width: 245px;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  color: #BDBDBD;
+  border: 1px solid #1A1313;
+  box-sizing: border-box;
+  padding: 6px 30px;
+  display: flex;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.contact_tabs-btn:hover {
+  border: 1px solid #E34132;
+  transition: 0.3s;
+}
+
+.contact_tabs-btn--active {
+  border: 1px solid #E34132;
+  color: #E34132;
+  transition: 0.3s;
+}
+
+
+.contact_list-item:hover {
+  cursor: pointer;
+  height: 200px;
+  background-color: #E34132;
+  transition: 0.3s;
+
+  a {
+
+    color: #fff;
+    transition: 0.3s;
+
+  }
+
+
+
+  span {
+    color: #fff;
+    transition: 0.3s;
+  }
+}

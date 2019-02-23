@@ -1,0 +1,29 @@
+.services-btn {
+  text-decoration: none;
+  font-family: 'Ubuntu', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  line-height: normal;
+  font-size: 18px;
+  text-align: right;
+  display: block;
+  color: #E34132;
+  position: relative;
+}
+
+.services-btn:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 90px;
+  width: 70px;
+  border: 1px solid #E34132;
+  transition: 0.3s;
+}
+
+.services-btn:hover:after {
+  left: 180px;
+  transition: 0.3s;
+}

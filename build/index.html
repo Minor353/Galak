@@ -4,19 +4,33 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>СТО Галак</title>
+    <title>СТО Галлак</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css"/>
+    <link rel="stylesheet" href="assets/styles/jquery.mCustomScrollbar.css"/>
+    <link rel="stylesheet" href="assets/styles/app.min.css"/>
   </head>
   <body>
     <div class="wrapper">
+      <div class="popup-form">
+        <div class="popup-form_content">
+          <h4 class="popup-form_content-title">записаться на обслуживание</h4>
+          <form action="#" method="post"></form>
+          <input type="text" placeholder="Ваше имя"/>
+          <input type="text" placeholder="Ваш телефон"/>
+          <textarea name="#" placeholder="Ваш вопрос"></textarea>
+          <button type="submit">отправить заявку</button>
+        </div>
+      </div>
       <header class="header">
         <ul class="header_contact-wrap">
-          <li class="header_contact-item"><a class="link-phone" href="tel:+380562366166"><img src="#" alt="phone"/><span>(0562) 36-61-66</span></a></li>
-          <li class="header_contact-item"><a class="link-email" href="mailto:nissan@gallak.dp.ua"><img src="#" alt="mail"/><span>nissan@gallak.dp.ua</span></a></li>
+          <li class="header_contact-item"><a class="link-phone" href="tel:+380562366166" target="_blank"><img src="assets/images/icons/phone.svg" alt="phone"/><span>(0562) 36-61-66</span></a></li>
+          <li class="header_contact-item"><a class="link-email" href="mailto:nissan@gallak.dp.ua" target="_blank"><img src="assets/images/icons/mail.svg" alt="mail"/><span>nissan@gallak.dp.ua</span></a></li>
           <li class="header_contact-item">
-            <div class="work-time"><img src="#" alt="time"/><span>График работы:<br>пн-пт: 7:00-22:00</span></div>
+            <div class="work-time"><img src="assets/images/icons/clock.svg" alt="time"/><span>График работы:<br>пн-пт: 7:00-22:00</span></div>
           </li>
-          <li class="header_contact-item"><a class="link-contact" href="#"> <span>Адреса</span></a></li>
-          <li class="header_contact-item"><a class="link-social" href="#"><img src="#" alt="FB"/></a></li>
+          <li class="header_contact-item"><a class="link-contact" href="#contact"> <img src="assets/images/icons/placeholder.svg" alt="contact"/><span>Адреса</span></a></li>
+          <li class="header_contact-item"><a class="link-social" href="https://www.facebook.com/" target="_blank"><img src="assets/images/icons/social.svg" alt="FB"/></a></li>
         </ul>
       </header>
       <main class="main">
@@ -24,47 +38,76 @@
           <div class="main-section_wrap">
             <div class="main-section_content">
               <h3 class="main-section_content-title">Ваш автомобиль будет как новый!</h3>
-              <p class="main-section_content-text">От профессиональной мойки и ремонта повреждений салона до полировки и обработки кузова защитными покрытиями</p><a class="link-btn-call" href="#">записаться на обслуживание</a>
+              <p class="main-section_content-text">От профессиональной мойки и ремонта повреждений салона до полировки и обработки кузова защитными покрытиями</p><a class="link-btn-call form-call" href="#">записаться на обслуживание</a>
             </div>
           </div>
         </section>
-        <nav class="nav">
-          <ul class="nav_wrap">
-            <li class="nav_item"><a class="logo" href="#"><img src="#" alt="logo"/></a></li>
-            <li class="nav_item"><a class="nav_item-link" href="#">Услуги</a></li>
-            <li class="nav_item"><a class="nav_item-link" href="#">О нас</a></li>
-            <li class="nav_item"><a class="nav_item-link" href="#">Отзывы</a></li>
-            <li class="nav_item"><a class="nav_item-link" href="#">Контакты</a></li>
-            <li class="nav_item"><a class="link-btn-call" href="#">записаться на обслуживание</a></li>
-          </ul>
-        </nav>
+        <div class="nav_position">
+          <nav class="nav">
+            <ul class="nav_wrap">
+              <li class="nav_item"><a class="logo" href="#"><img src="assets/images/icons/logo_old.svg" alt="logo"/></a></li>
+              <li class="nav_item"><a class="nav_item-link" href="#services">Услуги</a></li>
+              <li class="nav_item"><a class="nav_item-link" href="#about">О нас</a></li>
+              <li class="nav_item"><a class="nav_item-link" href="#reviews">Отзывы</a></li>
+              <li class="nav_item"><a class="nav_item-link" href="#contact">Контакты</a></li>
+              <li class="nav_item"><a class="link-btn-call form-call" href="#">записаться на обслуживание</a></li>
+            </ul>
+          </nav>
+        </div>
         <section class="services">
+          <div class="service-popup">
+            <div class="service-popup_wrap">
+              <h4 class="service-popup_title">Название услуги</h4>
+              <div class="service-popup_content">
+                <div class="service-popup_content-left">
+                  <div class="service-popup_content-left-img"><img src="assets/images/content/service-image.png" alt=""/></div><a class="link-btn-call form-call" href="#">записаться на обслуживание </a><a class="service-popup_btn" href="#">Назад</a>
+                </div>
+                <div class="service-popup_content-right">
+                  <div class="service-popup_content-right-text">
+                    <div>Значительная доля импорта автомобилей в Украину приходится на автомобили японских производителей — на них приходится почти 20% от общего объёма импорта (для сравнения Германия и Китай по отдельности поставляют примерно в два раза меньше). Несомненно, тенденция сохранится и в последующие годы: за счёт сочетания непревзойдённого качества, высокой надёжности и приемлемых цен японские автомобили способны побороться за место на украинском автомобильном рынке с корейскими, китайскими, немецкими и американскими моделями.</div>
+                    <p>Автосервис «Галлак» специализируется на ремонте и диагностике «японцев» более 15 лет, мы проводим техническое обслуживание «Лексус» и прочих моделей «Тойоты», «Мазда», «Ниссан» и пр., диагностику «Хонда», «Субару», «Мицубиши» и пр., ремонт двигателя, ходовой части и прочих блоков и систем японских автомобилей. Уже более 10 лет автосервис Днепропетровска «Галлак» аттестуется в соответствии со стандартами «Mobil 1», так что качество обслуживания в нашем автосервисе не уступает обслуживанию в сервисах официальных дилеров, при этом услуги предоставляются по низким ценам. На произведённые работы предоставляется гарантия.</p>
+                    <p>В спектр предоставляемых услуг по обслуживанию японских автомобилей входит: </p>
+                    <ul>
+                      <li>комплексная компьютерная диагностика с использованием дилерского оборудования;</li>
+                      <li>проверка и ремонт электрических систем;</li>
+                      <li>ремонт двигателя;</li>
+                      <li>ремонт ходовой части;</li>
+                      <li>ремонт топливной системы;</li>
+                    </ul>
+                    <p>Значительная доля импорта автомобилей в Украину приходится на автомобили японских производителей — на них приходится почти 20% от общего объёма импорта (для сравнения Германия и Китай по отдельности поставляют примерно в два раза меньше). Несомненно, тенденция сохранится и в последующие годы: за счёт сочетания непревзойдённого качества, высокой надёжности и приемлемых цен японские автомобили способны побороться за место на украинском автомобильном рынке с корейскими, китайскими, немецкими и американскими моделями.</p>
+                    <p>Автосервис «Галлак» специализируется на ремонте и диагностике «японцев» более 15 лет, мы проводим техническое обслуживание «Лексус» и прочих моделей «Тойоты», «Мазда», «Ниссан» и пр., диагностику «Хонда», «Субару», «Мицубиши» и пр., ремонт двигателя, ходовой части и прочих блоков и систем японских автомобилей. Уже более 10 лет автосервис Днепропетровска «Галлак» аттестуется в соответствии со стандартами «Mobil 1», так что качество обслуживания в нашем автосервисе не уступает обслуживанию в сервисах официальных дилеров, при этом услуги предоставляются по низким ценам. На произведённые работы предоставляется гарантия.</p>
+                    <p>В спектр предоставляемых услуг по обслуживанию японских автомобилей входит: </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><a href="#" id="services"></a>
           <div class="services_wrap">
             <h4 class="services_title">Услуги</h4>
             <p class="services_subtitle">Мастера восстанавливают поверхность вашего автомобиля, – и создают незаметный, но очень эффективный. </p>
           </div>
           <ul class="services_list">
-            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="#" alt="services"/>
+            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="assets/images/content/01.jpg" alt="services"/>
                 <h5 class="services_item-title">Слесарные работы</h5>
                 <p class="services_item-description">Мастера восстанавливают поверхность, но очень эффективный.</p><a class="services-btn" href="#">Подробнее</a></a></li>
-            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="#" alt="services"/>
+            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="assets/images/content/02.jpg" alt="services"/>
                 <h5 class="services_item-title">Кузовные работы</h5>
                 <p class="services_item-description">Мастера восстанавливают поверхность, но очень эффективный.</p><a class="services-btn" href="#">Подробнее</a></a></li>
-            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="#" alt="services"/>
+            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="assets/images/content/03.jpg" alt="services"/>
                 <h5 class="services_item-title">Ремонт японских авто</h5>
                 <p class="services_item-description">Мастера восстанавливают поверхность, но очень эффективный.</p><a class="services-btn" href="#">Подробнее</a></a></li>
-            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="#" alt="services"/>
+            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="assets/images/content/04.jpg" alt="services"/>
                 <h5 class="services_item-title">Запчасти</h5>
                 <p class="services_item-description">Мастера восстанавливают поверхность, но очень эффективный.</p><a class="services-btn" href="#">Подробнее</a></a></li>
-            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="#" alt="services"/>
+            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="assets/images/content/01.jpg" alt="services"/>
                 <h5 class="services_item-title">Слесарные работы</h5>
                 <p class="services_item-description">Мастера восстанавливают поверхность, но очень эффективный.</p><a class="services-btn" href="#">Подробнее</a></a></li>
-            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="#" alt="services"/>
+            <li class="services_list-item"><a class="services_item-wrap" href="#"><img src="assets/images/content/02.jpg" alt="services"/>
                 <h5 class="services_item-title">Кузовные работы</h5>
                 <p class="services_item-description">Мастера восстанавливают поверхность, но очень эффективный.</p><a class="services-btn" href="#">Подробнее</a></a></li>
           </ul>
         </section>
-        <section class="about">
+        <section class="about"><a href="#" id="about"></a>
           <div class="about_wrap">
             <div class="about_prev">
               <h3 class="about_title">О нас</h3>
@@ -76,22 +119,23 @@
           </div>
           <div class="about-gallery">
             <ul class="about-gallery_wrap">
-              <li class="about-gallery_item"><a href="#"><img src="#" alt="gallery"/></a></li>
-              <li class="about-gallery_item"><a href="#"><img src="#" alt="gallery"/></a></li>
-              <li class="about-gallery_item"><a href="#"><img src="#" alt="gallery"/></a></li>
-              <li class="about-gallery_item"><a href="#"><img src="#" alt="gallery"/></a></li>
-              <li class="about-gallery_item"><a href="#"><img src="#" alt="gallery"/></a></li>
-              <li class="about-gallery_item"><a href="#"><img src="#" alt="gallery"/></a></li>
-              <li class="about-gallery_item"><a href="#"><img src="#" alt="gallery"/></a></li>
-              <li class="about-gallery_item"><a href="#"><img src="#" alt="gallery"/></a></li>
+              <li class="about-gallery_item"><a data-fancybox="gallery" href="assets/images/content/gallery1.png"><img src="assets/images/content/gallery1.png" alt="gallery"/></a></li>
+              <li class="about-gallery_item"><a data-fancybox="gallery" href="assets/images/content/gallery2.png"><img src="assets/images/content/gallery2.png" alt="gallery"/></a></li>
+              <li class="about-gallery_item"><a data-fancybox="gallery" href="assets/images/content/gallery3.png"><img src="assets/images/content/gallery3.png" alt="gallery"/></a></li>
+              <li class="about-gallery_item"><a data-fancybox="gallery" href="assets/images/content/gallery4.png"><img src="assets/images/content/gallery4.png" alt="gallery"/></a></li>
+              <li class="about-gallery_item"><a data-fancybox="gallery" href="assets/images/content/gallery5.png"><img src="assets/images/content/gallery5.png" alt="gallery"/></a></li>
+              <li class="about-gallery_item"><a data-fancybox="gallery" href="assets/images/content/gallery1.png"><img src="assets/images/content/gallery1.png" alt="gallery"/></a></li>
+              <li class="about-gallery_item"><a data-fancybox="gallery" href="assets/images/content/gallery2.png"><img src="assets/images/content/gallery2.png" alt="gallery"/></a></li>
+              <li class="about-gallery_item"><a data-fancybox="gallery" href="assets/images/content/gallery3.png"><img src="assets/images/content/gallery3.png" alt="gallery"/></a></li>
             </ul>
           </div>
         </section>
         <section class="stock">
           <div class="stock_wrap">
+            <div class="stock_img"><img src="assets/images/content/stock.png" alt="stock"/></div>
             <div class="stock_content">
               <h3 class="stock_title">Акция</h3>
-              <p class="stock_text">«Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят вас на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4. Наши квалифицированные инженеры проведут полный осмотр и починку транспортного средства с применением сертифицированного диагностического оборудования, дилерских запчастей и расходных материалов.</p><a class="stock_btn-link" href="#">Получить скидку</a>
+              <p class="stock_text">«Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят ваc на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4.</p><a class="stock_btn-link form-call" href="#">Получить скидку</a>
             </div>
           </div>
         </section>
@@ -100,12 +144,12 @@
             <h3 class="what-we_title">Что мы предлагаем</h3>
             <p class="what-we_text">«Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят вас на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4. Наши квалифицированные инженеры проведут полный осмотр и починку транспортного средства с применением сертифицированного диагностического оборудования, дилерских запчастей и расходных материалов. «Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят вас на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4. Наши квалифицированные инженеры проведут полный осмотр и починку транспортного средства с применением сертифицированного диагностического оборудования, дилерских запчастей и расходных материалов. «Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят вас на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4. Наши квалифицированные инженеры проведут полный осмотр и починку транспортного средства с применением сертифицированного диагностического оборудования, дилерских запчастей и расходных материалов.</p>
             <ul class="what-we_partners">
-              <li class="what-we_partners-item"><img src="#" alt="partner"/></li>
-              <li class="what-we_partners-item"><img src="#" alt="partner"/></li>
-              <li class="what-we_partners-item"><img src="#" alt="partner"/></li>
-              <li class="what-we_partners-item"><img src="#" alt="partner"/></li>
-              <li class="what-we_partners-item"><img src="#" alt="partner"/></li>
-              <li class="what-we_partners-item"><img src="#" alt="partner"/></li>
+              <li class="what-we_partners-item"><img src="assets/images/content/Toyota.svg" alt="partner"/></li>
+              <li class="what-we_partners-item"><img src="assets/images/content/Mazda.svg" alt="partner"/></li>
+              <li class="what-we_partners-item"><img src="assets/images/content/honda.svg" alt="partner"/></li>
+              <li class="what-we_partners-item"><img src="assets/images/content/lexus.svg" alt="partner"/></li>
+              <li class="what-we_partners-item"><img src="assets/images/content/Nissan.svg" alt="partner"/></li>
+              <li class="what-we_partners-item"><img src="assets/images/content/infiniti.svg" alt="partner"/></li>
             </ul>
           </div>
         </section>
@@ -113,19 +157,23 @@
           <div class="why-we_wrap">
             <h3 class="why-we_title">Почему мы</h3>
             <ul class="why-we_features">
-              <li class="why-we_features-item"><img class="why-we_features-img" src="#" alt="feature"/>
+              <li class="why-we_features-item">
+                <div class="why-we_features-img-wrap"><img class="why-we_features-img" src="assets/images/icons/dashboard.svg" alt="feature"/></div>
                 <h5 class="why-we_features-title">CAR INSPECTION</h5>
                 <p class="why-we_features-text">It is a long established fact that a reader will be distracted by the readable content.</p>
               </li>
-              <li class="why-we_features-item"><img class="why-we_features-img" src="#" alt="feature"/>
+              <li class="why-we_features-item">
+                <div class="why-we_features-img-wrap"><img class="why-we_features-img" src="assets/images/icons/speedometer.svg" alt="feature"/></div>
                 <h5 class="why-we_features-title">CAR INSPECTION</h5>
                 <p class="why-we_features-text">It is a long established fact that a reader will be distracted by the readable content.</p>
               </li>
-              <li class="why-we_features-item"><img class="why-we_features-img" src="#" alt="feature"/>
+              <li class="why-we_features-item">
+                <div class="why-we_features-img-wrap"><img class="why-we_features-img" src="assets/images/icons/dashboard.svg" alt="feature"/></div>
                 <h5 class="why-we_features-title">CAR INSPECTION</h5>
                 <p class="why-we_features-text">It is a long established fact that a reader will be distracted by the readable content.</p>
               </li>
-              <li class="why-we_features-item"><img class="why-we_features-img" src="#" alt="feature"/>
+              <li class="why-we_features-item">
+                <div class="why-we_features-img-wrap"><img class="why-we_features-img" src="assets/images/icons/speedometer.svg" alt="feature"/></div>
                 <h5 class="why-we_features-title">CAR INSPECTION</h5>
                 <p class="why-we_features-text">It is a long established fact that a reader will be distracted by the readable content.</p>
               </li>
@@ -171,36 +219,41 @@
             </div>
           </div>
         </section>
-        <section class="reviews">
+        <section class="reviews"><a href="#" id="reviews"></a>
           <div class="reviews_wrap">
             <h3 class="reviews_title">Что о нас говорят</h3>
             <ul class="reviews_list">
               <li class="reviews_item">
-                <div class="reviews_item-user"><img src="#" alt="ava"/>
+                <div class="reviews_item-user">
+                  <div class="reviews_item-user-img"><img src="assets/images/content/ava_1.png" alt="ava"/></div>
                   <div class="reviews_item-user-data"><span>Джон доу</span><span>Владелец nissan juke</span></div>
                 </div>
                 <div class="reviews_item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
               </li>
               <li class="reviews_item">
-                <div class="reviews_item-user"><img src="#" alt="ava"/>
+                <div class="reviews_item-user">
+                  <div class="reviews_item-user-img"><img src="assets/images/content/ava_2.png" alt="ava"/></div>
                   <div class="reviews_item-user-data"><span>Джон доу</span><span>Владелец nissan juke</span></div>
                 </div>
                 <div class="reviews_item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
               </li>
               <li class="reviews_item">
-                <div class="reviews_item-user"><img src="#" alt="ava"/>
+                <div class="reviews_item-user">
+                  <div class="reviews_item-user-img"><img src="assets/images/content/ava_3.png" alt="ava"/></div>
                   <div class="reviews_item-user-data"><span>Джон доу</span><span>Владелец nissan juke</span></div>
                 </div>
                 <div class="reviews_item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
               </li>
               <li class="reviews_item">
-                <div class="reviews_item-user"><img src="#" alt="ava"/>
+                <div class="reviews_item-user">
+                  <div class="reviews_item-user-img"><img src="assets/images/content/ava_1.png" alt="ava"/></div>
                   <div class="reviews_item-user-data"><span>Джон доу</span><span>Владелец nissan juke</span></div>
                 </div>
                 <div class="reviews_item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
               </li>
               <li class="reviews_item">
-                <div class="reviews_item-user"><img src="#" alt="ava"/>
+                <div class="reviews_item-user">
+                  <div class="reviews_item-user-img"><img src="assets/images/content/ava_2.png" alt="ava"/></div>
                   <div class="reviews_item-user-data"><span>Джон доу</span><span>Владелец nissan juke</span></div>
                 </div>
                 <div class="reviews_item-text">Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.</div>
@@ -208,22 +261,29 @@
             </ul>
           </div>
         </section>
-        <section class="contact">
-          <div class="contact_title-wrap">
-            <h3 class="contact_title">Контакты</h3>
-            <p class="contact_description">Мастера восстанавливают поверхность вашего автомобиля и создают незаметный, но очень эффективный</p>
+        <section class="contact"><a href="#" id="contact"></a>
+          <div class="contact_title-wrap-bg">
+            <div class="contact_title-wrap">
+              <h3 class="contact_title">Контакты</h3>
+              <p class="contact_description">Мастера восстанавливают поверхность вашего автомобиля и создают незаметный, но очень эффективный</p>
+            </div>
+            <div class="contact_tabs"><a class="contact_tabs-btn" href="#">ул. Купянская, 4</a><a class="contact_tabs-btn" href="#">ул. Богдана Хмельницкого 156д</a></div>
           </div>
-          <div class="contact_tabs"><a class="contact_tabs-btn" href="#">ул. Купянская, 4</a><a class="contact_tabs-btn" href="#">ул. Богдана Хмельницкого 156д</a></div>
           <div class="contact_map">
             <div id="map"></div>
           </div>
           <ul class="contact_list">
-            <li class="contact_list-item"><a href="mailto:nissan@gallak.dp.ua">nissan@gallak.dp.ua</a></li>
-            <li class="contact_list-item"><a href="tel:+380675632003">067 563 20 03</a><a href="tel:+380562366166">0562 366 166</a></li>
+            <li class="contact_list-item"><a href="mailto:nissan@gallak.dp.ua" target="_blank">nissan@gallak.dp.ua</a></li>
+            <li class="contact_list-item"><a href="tel:+380675632003" target="_blank">067 563 20 03</a><a href="tel:+380562366166" target="_blank">0562 366 166</a></li>
             <li class="contact_list-item"><span>График</span><span>С ПН  ПО ПТ</span><span>07:00 - 22:00</span></li>
           </ul>
         </section>
         <footer class="footer"></footer>
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js"></script>
+        <script src="assets/scripts/jquery.mCustomScrollbar.concat.min.js"></script>
+        <script src="assets/scripts/index-min.js"></script>
       </main>
     </div>
   </body>

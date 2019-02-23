@@ -1,0 +1,94 @@
+.popup-form {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #26222280;
+  display: flex;
+  z-index: 999999;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+}
+
+.popup-form--active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s;
+}
+
+.popup-form_content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 70px;
+  background: #262222;
+  border: 1px solid #1C1919;
+  box-sizing: border-box;
+
+  input {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 16px;
+    padding: 15px 40px;
+    color: #646673;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+  }
+
+  textarea {
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    font-size: 16px;
+    padding: 15px 40px;
+    color: #646673;
+    background: #F2F2F2;
+    border: 1px solid #F2F2F2;
+    box-sizing: border-box;
+    resize: none;
+    min-height: 180px;
+    margin-bottom: 40px;
+
+  }
+
+  button {
+    background: #E34132;
+    border-color: transparent;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 15px;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 0.3s;
+
+    &:hover {
+      background: #FFFFFF;
+      color: #262222;
+      transition: 0.3s;
+    }
+  }
+}
+
+.popup-form_content-title {
+  margin-top: 0;
+  margin-bottom: 40px;
+  font-family: 'BebasBold';
+  line-height: normal;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #FFFFFF;
+}

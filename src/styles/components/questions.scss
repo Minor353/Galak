@@ -1,0 +1,95 @@
+.questions {
+  padding-bottom: 160px;
+}
+
+.questions_wrap {
+  max-width: 1170px;
+  margin: 0 auto;
+  background-image: url('../images/content/bg_svg_faq.png');
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.questions_title {
+  text-align: center;
+  font-family: 'BebasBold';
+  font-size: 40px;
+  text-align: center;
+  margin-top: 140px;
+  color: #FFFFFF;
+
+}
+
+.questions_content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.questions_content-faq {
+  width: 56%;
+  box-sizing: border-box;
+}
+
+.questions_content-form {
+  width: 42%;
+  box-sizing: border-box;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+
+    input {
+      background: #1D1D1D;
+      border: 1px solid #F2F2F2;
+      box-sizing: border-box;
+      font-family: 'Ubuntu', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      font-size: 16px;
+      padding: 15px 40px;
+      color: #F2F2F2;
+      margin-bottom: 40px;
+    }
+
+    textarea {
+      background: #1D1D1D;
+      border: 1px solid #F2F2F2;
+      box-sizing: border-box;
+      font-family: 'Ubuntu', sans-serif;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+      font-size: 16px;
+      padding: 15px 40px;
+      color: #F2F2F2;
+      resize: none;
+      min-height: 147px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+.btn-form {
+  font-family: 'Ubuntu', sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+  font-size: 16px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 14px 20px;
+  color: #FFFFFF;
+  background: #E34132;
+  border-color: transparent;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-form:hover {
+  background: #FFFFFF;
+  color: #262222;
+  transition: 0.3s;
+}

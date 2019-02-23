@@ -1,0 +1,18 @@
+.link-btn-call {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 12px 30px;
+  border: 3px solid #E34132;
+  display: block;
+  width: max-content;
+  transition: 0.3s;
+}
+
+
+.link-btn-call:hover {
+  background: #E34132;
+  transition: 0.3s;
+}
