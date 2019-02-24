@@ -10,22 +10,21 @@ $('.reviews_list').slick({
   autoplay: true,
   autoplaySpeed: 2000,
   responsive: [{
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        infinite: true
-      }
-    },
-    {
-      breakpoint: 600,
+      breakpoint: 1000,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2
       }
     },
     {
-      breakpoint: 480,
+      breakpoint: 800,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    },
+    {
+      breakpoint: 700,
       settings: {
         slidesToShow: 1,
         slidesToScroll: 1
@@ -53,21 +52,25 @@ $('.about-gallery_wrap').slick({
       settings: {
         slidesToShow: 3,
         slidesToScroll: 3,
-        infinite: true
+
       }
     },
     {
-      breakpoint: 600,
+      breakpoint: 769,
       settings: {
         slidesToShow: 2,
-        slidesToScroll: 2
+        slidesToScroll: 2,
+        centerMode: true,
+        centerPadding: '40px',
       }
     },
     {
       breakpoint: 480,
       settings: {
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        centerMode: true,
+        centerPadding: '40px',
       }
     }
     // You can unslick at a given breakpoint now by adding:
@@ -220,3 +223,13 @@ for (let i = 0; i < contactTabs.length; i++) {
     contactTabs[i].classList.add('contact_tabs-btn--active');
   })
 }
+
+
+/**Раскрытие мобильного меню **/
+
+const burgerBtn = document.querySelector('.ham');
+const mobileMenu = document.querySelector('.mobile-menu');
+
+burgerBtn.addEventListener('click', function () {
+  mobileMenu.classList.toggle('mobile-menu--active');
+})

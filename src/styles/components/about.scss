@@ -1,5 +1,9 @@
 .about {
   padding-bottom: 200px;
+
+  @include tablet() {
+    padding-bottom: 70px;
+  }
 }
 
 .about_wrap {
@@ -11,11 +15,25 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @include laptop() {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px;
+  }
+
+  @include tablet() {
+    flex-direction: column;
+  }
 }
 
 .about_prev {
   width: 380px;
   margin-right: 30px;
+
+  @include tablet() {
+    width: 100%;
+  }
 }
 
 .about_description {
@@ -30,6 +48,10 @@
 
 .about_text {
   width: 800px;
+
+  @include tablet() {
+    width: 100%;
+  }
 
   p {
     column-count: 2;

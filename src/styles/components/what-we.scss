@@ -1,6 +1,12 @@
 .what-we_wrap {
   max-width: 1170px;
   margin: 0 auto;
+
+  @include laptop() {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px;
+  }
 }
 
 .what-we_title {
@@ -10,7 +16,12 @@
   font-size: 40px;
   text-transform: uppercase;
   color: #FFFFFF;
+
+  @include tablet() {
+    margin-top: 70px;
+  }
 }
+
 
 .what-we_text {
   column-count: 3;
@@ -22,6 +33,11 @@
   font-size: 14px;
 
   color: #BDBDBD;
+
+  @include tablet() {
+    column-count: 2;
+    column-width: 340px;
+  }
 }
 
 .what-we_partners {
@@ -29,15 +45,30 @@
   margin-top: 40px;
   display: flex;
   justify-content: space-between;
+
+  @include mobile() {
+    flex-wrap: wrap;
+  }
 }
 
 .what-we_partners-item {
   list-style-type: none;
 
+  @include mobile() {
+    width: 33%;
+    margin-bottom: 40px;
+  }
+
   img {
     filter: grayscale(0.70);
     transition: 0.3s;
     cursor: pointer;
+
+    @include tablet() {
+      width: 80px;
+      height: 15px;
+      filter: grayscale(0);
+    }
   }
 }
 

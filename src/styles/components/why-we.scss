@@ -5,6 +5,12 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @include laptop() {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px;
+  }
 }
 
 .why-we_title {
@@ -14,12 +20,20 @@
   text-transform: uppercase;
   color: #FFFFFF;
   margin-top: 160px;
+
+  @include tablet() {
+    margin-top: 70px;
+  }
 }
 
 .why-we_features {
   padding: 0;
   display: flex;
   justify-content: center;
+
+  @include laptop() {
+    flex-wrap: wrap;
+  }
 }
 
 .why-we_features-item {
@@ -30,6 +44,16 @@
   padding: 40px;
   position: relative;
   transition: 0.3s;
+
+  @include laptop() {
+    width: 48%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+
+  @include premobile() {
+    width: 100%;
+  }
 }
 
 .why-we_features-item:hover {

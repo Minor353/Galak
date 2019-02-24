@@ -5,16 +5,40 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+
+  @include tablet() {
+    background-image: url('../images/content/background_tb.png');
+  }
+
+  @include mobile() {
+    background-image: url('../images/content/background_mb.png');
+  }
 }
 
 .main-section_wrap {
   max-width: 1170px;
   margin: 0 auto;
+
+  @include laptop() {
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
+
+  @include tablet() {
+    display: flex;
+    height: 70%;
+  }
 }
 
 .main-section_content {
   max-width: 615px;
   margin-top: 120px;
+
+  @include tablet() {
+    margin: auto;
+    text-align: center;
+  }
 }
 
 .main-section_content-title {

@@ -1,5 +1,9 @@
 .questions {
   padding-bottom: 160px;
+
+  @include tablet() {
+    padding-bottom: 70px;
+  }
 }
 
 .questions_wrap {
@@ -9,6 +13,12 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: contain;
+
+  @include laptop() {
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
 }
 
 .questions_title {
@@ -19,26 +29,48 @@
   margin-top: 140px;
   color: #FFFFFF;
 
+  @include tablet() {
+    margin-top: 50px;
+  }
 }
 
 .questions_content {
   display: flex;
   justify-content: space-between;
+
+  @include tablet() {
+    flex-direction: column;
+  }
 }
 
 .questions_content-faq {
   width: 56%;
   box-sizing: border-box;
+
+  @include tablet() {
+    width: 100%;
+  }
 }
 
 .questions_content-form {
   width: 42%;
   box-sizing: border-box;
 
+  @include tablet() {
+    width: 100%;
+  }
+
   form {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
+
+    @include tablet() {
+      margin-top: 50px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
 
     input {
       background: #1D1D1D;
@@ -52,6 +84,15 @@
       padding: 15px 40px;
       color: #F2F2F2;
       margin-bottom: 40px;
+
+      @include tablet() {
+        width: 48%;
+        margin-bottom: 20px;
+      }
+
+      @include mobile() {
+        width: 100%;
+      }
     }
 
     textarea {
@@ -68,6 +109,11 @@
       resize: none;
       min-height: 147px;
       margin-bottom: 40px;
+
+      @include tablet() {
+        width: 100%;
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -86,6 +132,10 @@
   border-color: transparent;
   transition: 0.3s;
   cursor: pointer;
+
+  @include tablet() {
+    margin: 0 auto;
+  }
 }
 
 .btn-form:hover {

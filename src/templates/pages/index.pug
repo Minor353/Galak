@@ -20,26 +20,67 @@ html(lang="ru")
                     textarea(name="#" placeholder="Ваш вопрос")
                     button(type="submit") отправить заявку
             header.header
+                .mobile-menu_header
+                    .mobile-menu
+                        ul.mobile-menu_wrap
+                            li.mobile-menu_item
+                                a(href="#").link-btn-call.form-call записаться на обслуживание
+                            li.mobile-menu_item
+                                a(href="#services").nav_item-link.nav_item-link-mobile Услуги
+                            li.mobile-menu_item
+                                a(href="#about").nav_item-link.nav_item-link-mobile О нас
+                            li.mobile-menu_item
+                                a(href="#reviews").nav_item-link.nav_item-link-mobile Отзывы
+                            li.mobile-menu_item
+                                a(href="#contact").nav_item-link.nav_item-link-mobile Контакты
+                        .mobile-menu_contact
+                            ul.mobile-menu_contact-list
+                                li.mobile-menu_contact-item
+                                    a(href="tel:+380562366166" target="_blank").link-phone
+                                        img(src="assets/images/icons/phone.svg", alt="phone")
+                                        span (0562) 36-61-66
+                                li.mobile-menu_contact-item
+                                    a(href="mailto:nissan@gallak.dp.ua" target="_blank").link-email
+                                        img(src="assets/images/icons/mail.svg", alt="mail")
+                                        span nissan@gallak.dp.ua
+                                li.mobile-menu_contact-item
+                                    .work-time
+                                        img(src="assets/images/icons/clock.svg", alt="time")
+                                        span График работы:<br>пн-пт: 7:00-22:00
+                                li.mobile-menu_contact-item
+                                    a(href="#contact").link-contact 
+                                        img(src="assets/images/icons/placeholder.svg", alt="contact")
+                                        span Карта
+                            a(href="https://www.facebook.com/" target="_blank").link-social
+                                img(src="assets/images/icons/social.svg", alt="FB") 
                 ul.header_contact-wrap
+                    li.header_contact-item.header_contact-item--tablet
+                        a(href="#").logo
+                            img(src="assets/images/icons/logo_old.svg", alt="logo")
                     li.header_contact-item
                         a(href="tel:+380562366166" target="_blank").link-phone
                             img(src="assets/images/icons/phone.svg", alt="phone")
                             span (0562) 36-61-66
-                    li.header_contact-item
+                    li.header_contact-item.header_contact-item--none
                         a(href="mailto:nissan@gallak.dp.ua" target="_blank").link-email
                             img(src="assets/images/icons/mail.svg", alt="mail")
                             span nissan@gallak.dp.ua
-                    li.header_contact-item
+                    li.header_contact-item.header_contact-item-work
                         .work-time
                             img(src="assets/images/icons/clock.svg", alt="time")
                             span График работы:<br>пн-пт: 7:00-22:00
-                    li.header_contact-item
+                    li.header_contact-item.header_contact-item-map
                         a(href="#contact").link-contact 
                             img(src="assets/images/icons/placeholder.svg", alt="contact")
-                            span Адреса
-                    li.header_contact-item
+                            span Карта
+                    li.header_contact-item.header_contact-item--none
                         a(href="https://www.facebook.com/" target="_blank").link-social
                             img(src="assets/images/icons/social.svg", alt="FB") 
+                    li.header_contact-item.header_contact-item--tablet
+                        svg.ham.hamRotate.ham1(viewBox='0 0 100 100', width='80', onclick="this.classList.toggle('active')")
+                            path.line.top(d='m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40')
+                            path.line.middle(d='m 30,50 h 40')
+                            path.line.bottom(d='m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40')
             main.main
                 section.main-section
                     .main-section_wrap
@@ -165,7 +206,9 @@ html(lang="ru")
                 section.stock
                     .stock_wrap
                         .stock_img
-                            img(src="assets/images/content/stock.png", alt="stock")
+                            picture
+                                source(srcset='assets/images/content/stock_tb.png', media='(max-width: 1200px)')
+                                img(srcset='assets/images/content/stock.png', alt='stock')
                         .stock_content
                             h3.stock_title Акция
                             p.stock_text «Галлак» — СТО Днепра, сотрудники которого обеспечат полную диагностику вашего японского автомобиля и снова «поставят ваc на колёса». Если ваш автомобиль нуждается в очередном техническом обслуживании или ремонте — просто оставьте его в нашем автосервисе по адресу ул. Купянская, 4.

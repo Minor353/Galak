@@ -9,6 +9,10 @@
   display: block;
   color: #E34132;
   position: relative;
+
+  @include tablet() {
+    text-align: center;
+  }
 }
 
 .services-btn:after {
@@ -21,6 +25,10 @@
   width: 70px;
   border: 1px solid #E34132;
   transition: 0.3s;
+
+  @include tablet() {
+    display: none;
+  }
 }
 
 .services-btn:hover:after {

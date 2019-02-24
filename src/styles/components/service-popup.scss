@@ -23,6 +23,12 @@
   max-width: 1170px;
   height: max-content;
   margin: auto;
+
+  @include laptop() {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 25px;
+  }
 }
 
 .service-popup_title {
@@ -32,11 +38,18 @@
   text-align: center;
   margin-top: 20px;
   color: #FFFFFF;
+
+  @include laptop() {
+    margin-bottom: 20px;
+  }
 }
 
 .service-popup_content {
   display: flex;
 
+  @include laptop() {
+    flex-direction: column;
+  }
 
 }
 
@@ -45,6 +58,10 @@
   flex-direction: column;
   align-items: center;
   margin-right: 30px;
+
+  @include mobile() {
+    margin: 0;
+  }
 }
 
 
@@ -52,6 +69,17 @@
   width: 370px;
   height: 335px;
   margin-bottom: 40px;
+
+
+  @include laptop() {
+    height: 200px;
+    width: 720px;
+    margin-bottom: 20px;
+  }
+
+  @include mobile() {
+    width: 100%;
+  }
 
   img {
     width: 100%;
@@ -73,6 +101,11 @@
   position: relative;
   width: 100px;
   margin-top: 40px;
+
+  @include laptop() {
+    margin-top: 25px;
+    margin-bottom: 25px;
+  }
 }
 
 .service-popup_btn:after {
@@ -98,6 +131,14 @@
 .service-popup_content-right {
   max-height: 500px;
   overflow: hidden;
+
+  @include laptop() {
+    max-height: 210px;
+  }
+
+  @include tablet() {
+    max-height: 200px;
+  }
 }
 
 .service-popup_content-right-text {
@@ -108,4 +149,8 @@
   font-size: 18px;
 
   color: #FFFFFF;
+
+  @include mobile() {
+    font-size: 14px;
+  }
 }

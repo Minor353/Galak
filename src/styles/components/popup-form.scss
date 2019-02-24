@@ -27,6 +27,11 @@
   border: 1px solid #1C1919;
   box-sizing: border-box;
 
+  @include mobile() {
+    padding: 25px 15px;
+
+  }
+
   input {
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
@@ -39,6 +44,11 @@
     border: 1px solid #F2F2F2;
     box-sizing: border-box;
     margin-bottom: 40px;
+
+    @include mobile() {
+      padding: 10px 30px;
+      margin-bottom: 20px;
+    }
   }
 
   textarea {
@@ -55,6 +65,11 @@
     resize: none;
     min-height: 180px;
     margin-bottom: 40px;
+
+    @include mobile() {
+      padding: 10px 30px;
+      margin-bottom: 20px;
+    }
 
   }
 
@@ -91,4 +106,9 @@
   text-transform: uppercase;
 
   color: #FFFFFF;
+
+  @include mobile() {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
 }

@@ -8,6 +8,10 @@
 
 .nav_position {
   height: 70px;
+
+  @include tablet() {
+    display: none;
+  }
 }
 
 .nav--fixed {
@@ -24,6 +28,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @include laptop() {
+    width: 100%;
+    padding: 0 25px;
+    box-sizing: border-box;
+  }
 }
 
 .nav_item {
