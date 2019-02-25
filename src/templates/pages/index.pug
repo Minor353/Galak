@@ -15,9 +15,9 @@ html(lang="ru")
                 .popup-form_content
                     h4.popup-form_content-title записаться на обслуживание
                     form(action="#", method="post")
-                    input(type="text" placeholder="Ваше имя")
-                    input(type="text" placeholder="Ваш телефон")
-                    textarea(name="#" placeholder="Ваш вопрос")
+                    input(type="text" placeholder="Ваше имя" required)
+                    input(type="text" placeholder="Ваш телефон" required)
+                    textarea(name="#" placeholder="Ваш вопрос" required)
                     button(type="submit") отправить заявку
             header.header
                 .mobile-menu_header
@@ -48,7 +48,7 @@ html(lang="ru")
                                         img(src="assets/images/icons/clock.svg", alt="time")
                                         span График работы:<br>пн-пт: 7:00-22:00
                                 li.mobile-menu_contact-item
-                                    a(href="#contact").link-contact 
+                                    a(href="https://www.google.com/maps/place/%D0%93%D0%B0%D0%BB%D0%BB%D0%B0%D0%BA/@48.4421997,35.0272475,17z/data=!4m8!1m2!2m1!1z0JPQsNC70LvQsNC6!3m4!1s0x40dbe33911c8fad9:0x5022184ad6ae9052!8m2!3d48.4425159!4d35.0296219").link-contact 
                                         img(src="assets/images/icons/placeholder.svg", alt="contact")
                                         span Карта
                             a(href="https://www.facebook.com/" target="_blank").link-social
@@ -70,7 +70,10 @@ html(lang="ru")
                             img(src="assets/images/icons/clock.svg", alt="time")
                             span График работы:<br>пн-пт: 7:00-22:00
                     li.header_contact-item.header_contact-item-map
-                        a(href="#contact").link-contact 
+                        a(href="#contact").link-contact#link-contact--tablet-none 
+                            img(src="assets/images/icons/placeholder.svg", alt="contact")
+                            span Карта
+                        a(href="#contact").link-contact#link-contact--tablet-block 
                             img(src="assets/images/icons/placeholder.svg", alt="contact")
                             span Карта
                     li.header_contact-item.header_contact-item--none
@@ -277,9 +280,9 @@ html(lang="ru")
                                         p.faq_text Ответ на вопрос 5 эксперты Украины в сфере авто дизайна,  внешнего вида автомобиля. Предоставляется комплоклеиваем пленкой, наносим тонировку и детейлинг. Предоставляем  весь комплекс услуг...
                             .questions_content-form
                                 form(action="#", method="post")
-                                    input(type="text" placeholder="Ваше имя")
-                                    input(type="text" placeholder="Ваш телефон")
-                                    textarea(name="" placeholder="Ваш вопрос")
+                                    input(type="text" placeholder="Ваше имя" required)
+                                    input(type="text" placeholder="Ваш телефон" required)
+                                    textarea(name="" placeholder="Ваш вопрос" required)
                                     button(type="submit").btn-form Отправить вопрос 
                 section.reviews
                     a(href="#")#reviews
@@ -337,6 +340,7 @@ html(lang="ru")
                             a(href="#").contact_tabs-btn ул. Богдана Хмельницкого 156д
                     .contact_map
                         #map
+                        #map-second
                     ul.contact_list
                         li.contact_list-item
                             a(href="mailto:nissan@gallak.dp.ua" target="_blank") nissan@gallak.dp.ua
@@ -353,3 +357,4 @@ html(lang="ru")
                 script(src='https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js')
                 script(src="assets/scripts/jquery.mCustomScrollbar.concat.min.js")
                 script(src="assets/scripts/index-min.js")
+                script(async='', defer='', src='https://maps.googleapis.com/maps/api/js?key=AIzaSyCo7hljuelb86soVC97y4atK-n_brWfc34&callback=initMap')

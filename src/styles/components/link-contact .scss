@@ -7,3 +7,17 @@
     }
   }
 }
+
+#link-contact--tablet-block {
+  display: none;
+
+  @include tablet() {
+    display: flex;
+  }
+}
+
+#link-contact--tablet-none {
+  @include tablet() {
+    display: none;
+  }
+}

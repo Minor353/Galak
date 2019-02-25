@@ -57,10 +57,6 @@
 
 .contact_map {
   height: 580px;
-  background-image: url('../images/content/map.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @include mobile() {
     height: 350px;
@@ -75,10 +71,12 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+
 }
 
 
 .contact_list-item {
+  position: relative;
   list-style-type: none;
   min-width: 300px;
   height: 160px;
@@ -247,4 +245,43 @@
   .contact_list-item span {
     font-size: 22px;
   }
+}
+
+
+#map {
+  height: 100%;
+}
+
+#map-second {
+  height: 100%;
+}
+
+.map-marker {
+  opacity: 0.6;
+}
+
+.popup-success {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #26222280;
+  display: flex;
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.3s;
+
+  img {
+    margin: auto;
+    width: 200px;
+  }
+}
+
+
+.popup-success--active {
+  opacity: 1;
+  pointer-events: all;
+  transition: 0.3s;
 }

@@ -232,4 +232,85 @@ const mobileMenu = document.querySelector('.mobile-menu');
 
 burgerBtn.addEventListener('click', function () {
   mobileMenu.classList.toggle('mobile-menu--active');
-})
+});
+
+/**Закрывание меню при переходам по ссылкам меню**/
+
+const menuLinks = document.querySelectorAll('.nav_item-link-mobile');
+
+for (let i = 0; i < menuLinks.length; i++) {
+  menuLinks[i].addEventListener('click', function () {
+    mobileMenu.classList.toggle('mobile-menu--active');
+    burgerBtn.classList.toggle('active');
+  })
+}
+
+
+/**Кастом google map **/
+
+const readyMap = function () {
+  const mapImg = document.querySelectorAll('#map img');
+
+  for (let i = 0; i < contactTabs.length; i++) {
+    mapImg[1].classList.add('map-marker');
+    contactTabs[i].addEventListener('click', function () {
+      for (let i = 0; i < contactTabs.length; i++) {
+        mapImg[i].classList.add('map-marker');
+      }
+      mapImg[i].classList.remove('map-marker');
+    })
+  }
+};
+
+
+const mapTimer = function () {
+  setTimeout(readyMap, 2000);
+};
+
+
+document.addEventListener("DOMContentLoaded", mapTimer);
+
+
+
+
+/**Обработчик формы**/
+$('#form').on('submit', submitForm);
+
+function submitForm(e) {
+  e.preventDefault();
+
+  var form = $(e.target),
+    data = form.serialize(),
+    url = form.attr('action');
+
+  var request = $.ajax({
+    type: 'POST',
+    url: url,
+    data: data
+  });
+
+  let formPopup = document.querySelector('.popup-success');
+
+  request.done(function (msg) {
+    formPopup.classList.add('popup-success--active');
+  });
+
+  request.fail(function (jqXHR, textStatus) {
+    formPopup.classList.add('form-popup-active');
+  })
+};
+
+
+
+/*const closeFormPopup = function () {
+    let formPopup = document.querySelector('.form-popup');
+    let closeBtn = document.querySelector('.close-btn');
+
+    closeBtn.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        formPopup.classList.remove('form-popup-active');
+        $("form")[0].reset();
+    })
+};
+closeFormPopup();*/
