@@ -80,15 +80,15 @@ $('.about-gallery_wrap').slick({
 });
 
 
-/** Кастом скрол для услуг**/
-(function ($) {
+/*/** Кастом скрол для услуг**/
+/*(function ($) {
   $(window).on("load", function () {
     $(".services_list").mCustomScrollbar({
       axis: "x",
       theme: "dark-3"
     });
   });
-})(jQuery);
+})(jQuery);*/
 
 /**Кастом скрол для попапа услуги **/
 (function ($) {
@@ -188,6 +188,7 @@ const servicesBtnOpen = document.querySelectorAll('.services-btn');
 const servicesItemLinks = document.querySelectorAll('.services_item-wrap');
 const servicesPopupClose = document.querySelector('.service-popup_btn');
 const servicesPopup = document.querySelector('.service-popup');
+const servicePopupCross = document.querySelector('.service-popup_cross');
 
 for (let i = 0; i < servicesBtnOpen.length; i++) {
   servicesBtnOpen[i].addEventListener('click', function (e) {
@@ -203,6 +204,11 @@ for (let i = 0; i < servicesBtnOpen.length; i++) {
 
 servicesPopupClose.addEventListener('click', function (e) {
   e.preventDefault();
+  servicesPopup.classList.remove('service-popup--active');
+
+});
+
+servicePopupCross.addEventListener('click', function () {
   servicesPopup.classList.remove('service-popup--active');
 
 })

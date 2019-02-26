@@ -9,6 +9,8 @@
   display: block;
   color: #E34132;
   position: relative;
+  max-width: 300px;
+  margin: 0 auto;
 
   @include tablet() {
     text-align: center;

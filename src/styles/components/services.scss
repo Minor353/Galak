@@ -43,6 +43,8 @@
   max-width: 1200px;
   margin: 0 auto;
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
 
   @include laptop() {
     width: 100%;
@@ -61,9 +63,8 @@
 
 .services_list-item {
   list-style-type: none;
-  max-width: 275px;
-  margin-right: 30px;
-  margin-bottom: 80px;
+  max-width: 385px;
+  margin-bottom: 50px;
 
   @include laptop() {
     margin-bottom: 45px;
@@ -74,8 +75,10 @@
   text-decoration: none;
 
   img {
-    width: 278px;
+    width: 380px;
     height: 326px;
+    display: block;
+    margin: 0 auto;
     object-fit: cover;
     filter: grayscale(1);
     transition: 0.3s;
@@ -86,6 +89,8 @@
 
     @include tablet() {
       filter: grayscale(0);
+      width: 250px;
+      height: 250px;
     }
   }
 }

@@ -14,16 +14,13 @@
 
 <body>
   <div class="wrapper">
-    <div class="popup-success">
-      <img src="assets/images/content/popup-success.svg" alt="success">
-    </div>
     <div class="popup-form">
       <div class="popup-form_content">
         <h4 class="popup-form_content-title">записаться на обслуживание</h4>
-        <form action="php/form.php" method="post" id="form"></form>
-        <input name="name" type="text" placeholder="Ваше имя" required="required" />
-        <input name="phone" type="text" placeholder="Ваш телефон" required="required" />
-        <textarea name="msg" placeholder="Ваш вопрос" required="required"></textarea>
+        <form action="#" method="post"></form>
+        <input type="text" placeholder="Ваше имя" required="required" />
+        <input type="text" placeholder="Ваш телефон" required="required" />
+        <textarea name="#" placeholder="Ваш вопрос" required="required"></textarea>
         <button type="submit">отправить заявку</button>
       </div>
     </div>
@@ -105,7 +102,9 @@
       <section class="services">
         <div class="service-popup">
           <div class="service-popup_wrap">
-            <h4 class="service-popup_title">Название услуги</h4>
+            <h4 class="service-popup_title">Название услуги
+              <div class="service-popup_cross"></div>
+            </h4>
             <div class="service-popup_content">
               <div class="service-popup_content-left">
                 <div class="service-popup_content-left-img"><img src="assets/images/content/service-image.png" alt="" /></div><a
@@ -358,10 +357,10 @@
               </ul>
             </div>
             <div class="questions_content-form">
-              <form action="form.php" method="post" id="form">
-                <input name="name" type="text" placeholder="Ваше имя" required="required" />
-                <input name="phone" type="text" placeholder="Ваш телефон" required="required" />
-                <textarea name="msg" placeholder="Ваш вопрос" required="required"></textarea>
+              <form action="#" method="post">
+                <input type="text" placeholder="Ваше имя" required="required" />
+                <input type="text" placeholder="Ваш телефон" required="required" />
+                <textarea name="" placeholder="Ваш вопрос" required="required"></textarea>
                 <button class="btn-form" type="submit">Отправить вопрос </button>
               </form>
             </div>
@@ -814,8 +813,6 @@
             });
         }
       </script>
-
-      <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo7hljuelb86soVC97y4atK-n_brWfc34&amp;callback=initMap"></script>
       <script async="" defer="" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo7hljuelb86soVC97y4atK-n_brWfc34&amp;callback=initMap"></script>
     </main>
   </div>

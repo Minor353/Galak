@@ -38,6 +38,7 @@
   text-align: center;
   margin-top: 20px;
   color: #FFFFFF;
+  position: relative;
 
   @include laptop() {
     margin-bottom: 20px;
@@ -51,6 +52,30 @@
     flex-direction: column;
   }
 
+}
+
+.service-popup_cross {
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40px;
+  height: 40px;
+  background-image: url('../images/icons/cross.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: translateY(0);
+  transition: 0.3s;
+
+  @include mobile() {
+    right: -20px;
+  }
+}
+
+.service-popup_cross:hover {
+  transform: translateY(4px);
+  transition: 0.3s;
 }
 
 .service-popup_content-left {
