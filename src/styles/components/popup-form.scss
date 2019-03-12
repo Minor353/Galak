@@ -26,6 +26,12 @@
   background: #262222;
   border: 1px solid #1C1919;
   box-sizing: border-box;
+  position: relative;
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 
   @include mobile() {
     padding: 25px 15px;
@@ -111,4 +117,27 @@
     font-size: 26px;
     margin-bottom: 30px;
   }
+}
+
+.popup-form_success {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #1C1919;
+  background-image: url('../images/content/popup-success.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 99999;
+  transition: 0.3s;
+}
+
+.popup-form_success--active {
+  opacity: 1;
+  transition: 0.3s;
 }

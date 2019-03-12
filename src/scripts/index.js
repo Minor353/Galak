@@ -295,14 +295,51 @@ function submitForm(e) {
     data: data
   });
 
-  let formPopup = document.querySelector('.popup-success');
+  let formPopupSuccess = document.querySelector('.popup-form_success');
+  let formPopup = document.querySelector('.popup-form');
+
+  const closeForm = function () {
+    formPopupSuccess.classList.remove('popup-form_success--active');
+    formPopup.classList.remove('popup-form--active');
+  }
 
   request.done(function (msg) {
-    formPopup.classList.add('popup-success--active');
+    formPopupSuccess.classList.add('popup-form_success--active');
+    setTimeout(closeForm, 1800);
+    $("form")[0].reset();
   });
 
   request.fail(function (jqXHR, textStatus) {
-    formPopup.classList.add('form-popup-active');
+    formPopupSuccess.classList.add('popup-form_success--active');
+    setTimeout(closeForm, 1800);
+    $("form")[0].reset();
+  })
+};
+
+/*********************************** */
+$('#form-second').on('submit', submitFormSecond);
+
+function submitFormSecond(e) {
+  e.preventDefault();
+
+  var form = $(e.target),
+    data = form.serialize(),
+    url = form.attr('action');
+
+  var request = $.ajax({
+    type: 'POST',
+    url: url,
+    data: data
+  });
+
+
+
+  request.done(function (msg) {
+    $('#form-second')[0].reset();
+  });
+
+  request.fail(function (jqXHR, textStatus) {
+    $('#form-second')[0].reset();
   })
 };
 
@@ -311,7 +348,7 @@ function submitForm(e) {
 /*const closeFormPopup = function () {
     let formPopup = document.querySelector('.form-popup');
     let closeBtn = document.querySelector('.close-btn');
-
+formPopup.classList.remove('popup-form--active');
     closeBtn.addEventListener('click', function (e) {
         e.preventDefault();
 

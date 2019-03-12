@@ -17,11 +17,13 @@
     <div class="popup-form">
       <div class="popup-form_content">
         <h4 class="popup-form_content-title">записаться на обслуживание</h4>
-        <form action="#" method="post"></form>
-        <input type="text" placeholder="Ваше имя" required="required" />
-        <input type="text" placeholder="Ваш телефон" required="required" />
-        <textarea name="#" placeholder="Ваш вопрос" required="required"></textarea>
-        <button type="submit">отправить заявку</button>
+        <form action="assets/form.php" method="post" id="form">
+          <input name="name" type="text" placeholder="Ваше имя" required="required" />
+          <input name="phone" type="text" placeholder="Ваш телефон" required="required" />
+          <textarea name="msg" placeholder="Ваш вопрос" required="required"></textarea>
+          <button type="submit">отправить заявку</button>
+        </form>
+        <div class="popup-form_success"></div>
       </div>
     </div>
     <header class="header">
@@ -357,10 +359,10 @@
               </ul>
             </div>
             <div class="questions_content-form">
-              <form action="#" method="post">
-                <input type="text" placeholder="Ваше имя" required="required" />
-                <input type="text" placeholder="Ваш телефон" required="required" />
-                <textarea name="" placeholder="Ваш вопрос" required="required"></textarea>
+              <form action="assets/form.php" method="post" id="form-second">
+                <input name="name" type="text" placeholder="Ваше имя" required="required" />
+                <input name="phone" type="text" placeholder="Ваш телефон" required="required" />
+                <textarea name="msg" placeholder="Ваш вопрос" required="required"></textarea>
                 <button class="btn-form" type="submit">Отправить вопрос </button>
               </form>
             </div>

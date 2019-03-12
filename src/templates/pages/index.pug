@@ -14,11 +14,12 @@ html(lang="ru")
             .popup-form
                 .popup-form_content
                     h4.popup-form_content-title записаться на обслуживание
-                    form(action="#", method="post")
-                    input(type="text" placeholder="Ваше имя" required)
-                    input(type="text" placeholder="Ваш телефон" required)
-                    textarea(name="#" placeholder="Ваш вопрос" required)
-                    button(type="submit") отправить заявку
+                    form(action="assets/form.php", method="post")#form
+                        input(name="name" type="text" placeholder="Ваше имя" required)
+                        input(name="phone" type="text" placeholder="Ваш телефон" required)
+                        textarea(name="msg" placeholder="Ваш вопрос" required)
+                        button(type="submit") отправить заявку
+                    .popup-form_success
             header.header
                 .mobile-menu_header
                     .mobile-menu
@@ -280,10 +281,10 @@ html(lang="ru")
                                         .faq_title Название вопроса 5
                                         p.faq_text Ответ на вопрос 5 эксперты Украины в сфере авто дизайна,  внешнего вида автомобиля. Предоставляется комплоклеиваем пленкой, наносим тонировку и детейлинг. Предоставляем  весь комплекс услуг...
                             .questions_content-form
-                                form(action="#", method="post")
-                                    input(type="text" placeholder="Ваше имя" required)
-                                    input(type="text" placeholder="Ваш телефон" required)
-                                    textarea(name="" placeholder="Ваш вопрос" required)
+                                form(action="assets/form.php", method="post")#form-second
+                                    input(name="name" type="text" placeholder="Ваше имя" required)
+                                    input(name="phone" type="text" placeholder="Ваш телефон" required)
+                                    textarea(name="msg" placeholder="Ваш вопрос" required)
                                     button(type="submit").btn-form Отправить вопрос 
                 section.reviews
                     a(href="#")#reviews
